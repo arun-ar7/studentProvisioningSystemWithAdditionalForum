@@ -1,0 +1,110 @@
+{
+  "id": 2,
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "active": {
+        "account_auths": [],
+        "key_auths": [
+          ["STM8JNmX6NUThf3poS7zd7j3PTKuPJt5ouRFs27jXdWsAWRXQkTDn", 1]
+        ],
+        "weight_threshold": 1
+      },
+      "balance": "0.000 HIVE",
+      "can_vote": true,
+      "comment_count": 0,
+      "created": "2022-12-22T03:53:15",
+      "curation_rewards": 221,
+      "delayed_votes": [{ "time": "2024-03-10T05:00:18", "val": 1734719028 }],
+      "delegated_vesting_shares": "261081.304450 VESTS",
+      "downvote_manabar": {
+        "current_mana": 40469132118,
+        "last_update_time": 1711815885
+      },
+      "governance_vote_expiration_ts": "2025-03-03T11:28:00",
+      "guest_bloggers": [],
+      "hbd_balance": "28.935 HBD",
+      "hbd_last_interest_payment": "1970-01-01T00:00:00",
+      "hbd_seconds": "0",
+      "hbd_seconds_last_update": "1970-01-01T00:00:00",
+      "id": 2433732,
+      "json_metadata": "{\"beneficiaries\":[]}",
+      "last_account_recovery": "1970-01-01T00:00:00",
+      "last_account_update": "2024-03-08T07:22:27",
+      "last_owner_update": "1970-01-01T00:00:00",
+      "last_post": "2024-03-30T16:35:00",
+      "last_root_post": "2024-03-30T11:19:57",
+      "last_vote_time": "2024-03-30T16:24:45",
+      "lifetime_vote_count": 0,
+      "market_history": [],
+      "memo_key": "STM5JfyBVtVrTJFV1NKjHMKErP3HFy4ZphUnwdBh5pEb2oH5J7etj",
+      "mined": false,
+      "name": "ranjith98",
+      "next_vesting_withdrawal": "1969-12-31T23:59:59",
+      "open_recurrent_transfers": 0,
+      "other_history": [],
+      "owner": {
+        "account_auths": [],
+        "key_auths": [
+          ["STM8Sfe7bchE4mJVkfaspcKeeeu9psVD6fXVo3quSjR3axQztm7Aq", 1]
+        ],
+        "weight_threshold": 1
+      },
+      "pending_claimed_accounts": 0,
+      "pending_transfers": 0,
+      "post_bandwidth": 0,
+      "post_count": 480,
+      "post_history": [],
+      "post_voting_power": "161876.528473 VESTS",
+      "posting": {
+        "account_auths": [
+          ["ecency.app", 1],
+          ["hive.blog", 1],
+          ["leofinance", 1],
+          ["peakd.app", 1],
+          ["steemauto", 1],
+          ["threespeak", 1]
+        ],
+        "key_auths": [
+          ["STM7c4pEXLpqWpEmUPJYy5qWv3UQ97iDhEYM7dWyW4ZyjwhQNftwu", 1]
+        ],
+        "weight_threshold": 1
+      },
+      "posting_json_metadata": "{\"profile\":{\"profile_image\":\"https://images.hive.blog/DQmdHw41aWX9EDS5ajHFvw73F4nfVm1xEUcyUKNndrrEHa3/money-gdb445b0c1_640.png\",\"version\":2,\"tokens\":[]}}",
+      "posting_rewards": 176951,
+      "previous_owner_update": "1970-01-01T00:00:00",
+      "proxied_vsf_votes": [0, 0, 0, 0],
+      "proxy": "",
+      "received_vesting_shares": "0.000000 VESTS",
+      "recovery_account": "ocdb",
+      "reputation": 0,
+      "reset_account": "null",
+      "reward_hbd_balance": "0.000 HBD",
+      "reward_hive_balance": "0.000 HIVE",
+      "reward_vesting_balance": "0.000000 VESTS",
+      "reward_vesting_hive": "0.000 HIVE",
+      "savings_balance": "0.000 HIVE",
+      "savings_hbd_balance": "0.011 HBD",
+      "savings_hbd_last_interest_payment": "2023-12-12T14:20:12",
+      "savings_hbd_seconds": "0",
+      "savings_hbd_seconds_last_update": "2023-12-12T14:20:12",
+      "savings_withdraw_requests": 0,
+      "tags_usage": [],
+      "to_withdraw": 0,
+      "transfer_history": [],
+      "vesting_balance": "0.000 HIVE",
+      "vesting_shares": "422957.832923 VESTS",
+      "vesting_withdraw_rate": "0.000000 VESTS",
+      "vote_history": [],
+      "voting_manabar": {
+        "current_mana": 154721486904,
+        "last_update_time": 1711815885
+      },
+      "voting_power": 9557,
+      "withdraw_routes": 0,
+      "withdrawn": 0,
+      "witness_votes": ["balaz", "stoodkev"],
+      "witnesses_voted_for": 2
+    }
+  ]
+}

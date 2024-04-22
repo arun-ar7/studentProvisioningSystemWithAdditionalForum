@@ -1,0 +1,30 @@
+.student-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 84vw;
+  /* height: 8vh; */
+  justify-content: space-around;
+  align-items: center;
+}
+.rollNumber-container {
+  /* width: 5vw; */
+}
+.studentInfo-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  /* width: 20vw; */
+}
+
+.studentInfoContainer div {
+  margin-bottom: 5px;
+  /* width: 18vw; */
+}
+
+.button-container {
+  margin-top: 10px;
+  /* width: 5vw; */
+}

@@ -1,0 +1,11 @@
+.dashboardTop-bgd {
+  background-color: purple;
+  height: 12vh;
+  border-radius: 8px;
+  /* width: 83vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
