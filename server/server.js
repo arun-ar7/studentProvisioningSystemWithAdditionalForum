@@ -1,20 +1,32 @@
 const { promisify } = require("util");
 const { exec } = require("child_process");
 const axios = require("axios");
+const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
-app.use(express.json());
-const execAsync = promisify(exec);
+const cors = require("cors");
 const { callApi } = require("./serverUtil");
+const userHandler = require("./controllers/userController");
 
+app.use(cors());
+app.use(express.json());
+
+async function callAwaitFunction() {
+  await mongoose.connect("mongodb://127.0.0.1:27017/student");
+  console.log("connect to mongodb");
+}
+
+callAwaitFunction();
+
+app.use("/users", userHandler);
 app.post("/run", async (req, res) => {
   try {
-    // const curlCommand = req.body.curl;
-    let activeStudents = await axios.get("http://localhost:8080/students");
+    // for provisioning
+    let activeStudents = await axios.get("http://localhost:8080/users");
     activeStudents = activeStudents.data;
-    let isStudentInvited = false;
     let invitedStudents = [];
     for (let i = 0; i < activeStudents.length; i++) {
+      let isStudentInvited = false;
       isStudentInvited = await callApi({
         name: activeStudents[i]?.firstname,
         email: activeStudents[i]?.email,

@@ -1,25 +1,34 @@
 const axios = require("axios");
 
-async function callApi({ name, email }) {
-  let data = `JSONString=%7B%22name%22%3A%22${name}%22%2C%22email%22%3A%22${email}%22%2C%22role_id%22%3A%221781869000000000780%22%2C%22custom_fields%22%3A%5B%5D%2C%22is_accountant_invite%22%3Afalse%7D&organization_id=${id}`;
+async function callApi({ name, email, role_id, org_id, oauth }) {
+  const axios = require("axios");
+  let data = JSON.stringify({
+    name: name,
+    email: email,
+    role_id: role_id,
+  });
+
   let config = {
     method: "post",
     maxBodyLength: Infinity,
-    url: "https://books.zoho.in/api/v3/users",
+    url: `https://www.zohoapis.in/books/v3/users?organization_id${org_id}`,
     headers: {
-      //headers with auth token
+      Authorization: "Zoho-oauthtoken " + oauth,
+      "content-type": "application/json",
+      Cookie:
+        "BuildCookie_60028095508=1; 54900d29bf=c6306c95177cf811ef626b61272b63be; JSESSIONID=555760B4F0FBC2566F64655DF19C1644; _zcsr_tmp=41283d93-1fb9-4b62-a7fe-b7ee3cd6e7de; zbcscook=41283d93-1fb9-4b62-a7fe-b7ee3cd6e7de",
     },
     data: data,
   };
 
   try {
-    response = await axios.request(config);
-    return true;
+    console.log("oauth ", oauth);
+    const response = await axios.request(config);
+    res.send(JSON.stringify(response));
   } catch (error) {
-    if (error.response?.data?.message?.includes("already been invited")) {
-      return false;
-    }
-    throw error;
+    console.log(error);
+    // console.log(error.messge);
+    res.status(400).send("Error occured");
   }
 }
 

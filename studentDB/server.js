@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const mongoose = require("mongoose");
 const studentHandler = require("./controllers/studentRequestHandlers.js");
 
 app.use(express.json());
+app.use(cors());
 
 async function callAwaitFunction() {
   await mongoose.connect("mongodb://127.0.0.1:27017/student");
